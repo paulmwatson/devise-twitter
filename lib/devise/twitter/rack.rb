@@ -13,7 +13,7 @@ module Devise
           # Perform _only_ the twitter_oauth strategy.
           # Emulate _perform_authentication in _warden/proxy.rb
           strategy = warden.send(:_fetch_strategy, :twitter_oauth, scope)
-          strategy.authenticate!
+          strategy.authenticate
           if strategy.user
             warden.set_user(strategy.user, :event => :authentication, :scope => scope)
           end
