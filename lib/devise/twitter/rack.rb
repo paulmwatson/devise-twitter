@@ -1,5 +1,5 @@
 module Devise
-  module Twitter
+  module TwitterD
     module Rack
       Signin = proc do |env|
         warden = env['warden']

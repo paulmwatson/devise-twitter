@@ -3,7 +3,7 @@ require File.expand_path("../lib/devise/twitter/version", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = "devise-twitter"
-  s.version     = Devise::Twitter::VERSION
+  s.version     = Devise::TwitterD::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Martin Schuerrer']
   s.email       = ['martin@schuerrer.org']

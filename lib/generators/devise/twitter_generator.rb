@@ -28,8 +28,8 @@ CONTENT
       def add_devise_twitter_routes
         route <<-CONTENT
 devise_for :#{singular_name} do
-    match '/#{singular_name}/sign_in/twitter' => Devise::Twitter::Rack::Signin
-    match '/#{singular_name}/connect/twitter' => Devise::Twitter::Rack::Connect
+    match '/#{singular_name}/sign_in/twitter' => Devise::TwitterD::Rack::Signin
+    match '/#{singular_name}/connect/twitter' => Devise::TwitterD::Rack::Connect
   end
 CONTENT
       end

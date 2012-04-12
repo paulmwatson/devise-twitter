@@ -1,5 +1,5 @@
 module Devise
-  module Twitter
+  module TwitterD
     @@setup_done = false
 
     mattr_accessor :consumer_key

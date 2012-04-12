@@ -28,7 +28,7 @@ Run the generator, supplying the name of the model (e.g. User)
 
 Add your OAuth credentials to `config/initializers/devise_twitter.rb` 
 
-    Devise::Twitter.setup do |config|
+    Devise::TwitterD.setup do |config|
       config.consumer_key = <YOUR CONSUMER KEY HERE>
       config.consumer_secret = <YOUR CONSUMER SECRET HERE>
       config.scope = :user
@@ -59,8 +59,8 @@ Modify the generated routes (in `config/routes.rb`) to your liking
 
     Application.routes.draw do
       devise_for :user do
-        match '/user/sign_in/twitter' => Devise::Twitter::Rack::Signin
-        match '/user/connect/twitter' => Devise::Twitter::Rack::Connect
+        match '/user/sign_in/twitter' => Devise::TwitterD::Rack::Signin
+        match '/user/connect/twitter' => Devise::TwitterD::Rack::Connect
       end
       ...
 

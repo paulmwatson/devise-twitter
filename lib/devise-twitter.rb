@@ -1,5 +1,5 @@
 module Devise
-  module Twitter
+  module TwitterD
   end
 end
 
